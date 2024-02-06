@@ -1,0 +1,6 @@
+# create application table
+CREATE TABLE IF NOT EXISTS application (
+    position TEXT,
+    date TEXT,
+    link TEXT
+)
