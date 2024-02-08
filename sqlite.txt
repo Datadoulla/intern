@@ -2,5 +2,12 @@
 CREATE TABLE IF NOT EXISTS application (
     position TEXT,
     date TEXT,
-    link TEXT
+    link TEXT,
+    compagny TEXT
 )
+
+CREATE TABLE IF NOT EXISTS updatet (
+    link TEXT,
+    entretien TEXT,
+    date_ent TEXT
+);
