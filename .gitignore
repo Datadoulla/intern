@@ -1,6 +1,6 @@
 .env
 intership.db 
-__pycache__/main.cpython-310.pyc
+__pycache__/*
 try.py
 bin
 bin/*
