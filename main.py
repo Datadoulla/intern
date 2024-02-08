@@ -1,16 +1,19 @@
 import os
-from dotenv import load_dotenv
-
 import sqlite3
+#from dotenv import load_dotenv
 from datetime import datetime
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 
+from database_setup import create_tables
+
 # Charger les variables d'environnement
-load_dotenv()
+#load_dotenv()
 
 # Récupérer les valeurs des variables d'environnement
 telegram_key = os.getenv('bot_key')
+
+create_tables()
 
 # Fonction pour stocker les données dans la table 'application' de la base de données 'intership.db'
 def store_application_data(position, date, link, company):
