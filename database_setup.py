@@ -13,7 +13,7 @@ def create_tables():
                         position TEXT,
                         date TEXT,
                         link TEXT,
-                        company TEXT
+                        compagny TEXT
                     )''')
     # Vérifier si la table 'update' existe
     cursor.execute('''CREATE TABLE IF NOT EXISTS updatet (

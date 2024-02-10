@@ -1,6 +1,7 @@
 import os
 import sqlite3
-#from dotenv import load_dotenv
+import logging
+from dotenv import load_dotenv
 from datetime import datetime
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
@@ -8,8 +9,8 @@ from telegram.ext import Updater, CommandHandler, CallbackContext
 from database_setup import create_tables
 
 # Charger les variables d'environnement
-#load_dotenv()
-
+load_dotenv()
+logging.info("your bot is running in background...")
 # Récupérer les valeurs des variables d'environnement
 telegram_key = os.getenv('bot_key')
 
@@ -59,6 +60,7 @@ def update_application(update: Update, context: CallbackContext):
         update.message.reply_text("Incorrect command format. Use '/updateapplication link entretien [date_ent]'.")
 
 def main():
+    print("your bot is running in background")
     updater = Updater(telegram_key, use_context=True)
     dp = updater.dispatcher
 

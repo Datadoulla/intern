@@ -1,0 +1,6 @@
+intership.db
+__pycache__/*
+try.py
+bin
+bin/*
+.gitignore
