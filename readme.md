@@ -1,7 +1,7 @@
 # Project Name
 
 A brief description of the project.
-
+...
 ## Table of Contents
 
 - [Installation](#installation)
