@@ -6,8 +6,8 @@ A brief description of the project.
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+[comment]: #- [Contributing](#contributing)
+[comment]: #- [License](#license)
 
 ## Installation
 
@@ -21,6 +21,6 @@ Instructions on how to use the project and any relevant examples.
 
 Guidelines for contributing to the project and how to submit pull requests.
 
-## License
+[comment]: ### License
 
-Information about the project's license and any relevant terms.
+[comment]: #Information about the project's license and any relevant terms.
