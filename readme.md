@@ -74,7 +74,10 @@ Example:
 
 To update an application, you need to response to the application message with `/updateapplication` keyword and precise Yes if you get an interview and the date of interview and No else.
 
-I personnaly recommand you to host you application on api plateforme like *pythonanywhere* to have a perment access and running application.
+Example:
+> Yes 20/02 (Day/month format)
+
+**I personnaly recommand you to host you application on api plateforme like *pythonanywhere* to have a perment access and running application.**
 
 <!---
 ## Contributing
