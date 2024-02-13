@@ -1,18 +1,18 @@
 # Internship applications tracking bot
 
-Internship applications can be overheaded and keep tracking your application numbers and information could be even worse. To organise and simplify this process, I decide to develop a telegram bot. Telegram offers an complete and adaptable interface for my application.
-I wanted the bot to get informations about my different applications, to stock those informatuons, to manage the potential update and to be able to produce some summary of the application process.
+Applying for internships can be tedious and keeping track of your application numbers and information can be even worse. To organise and simplify this process, I decided to develop a Telegram bot. Telegram offers a complete interface that can be adapted to my application.
+I wanted the bot to obtain information about my various applications, store this information, manage potential updates and be able to produce a summary of the application process.
 
 The first version of the bot application can achieve the first two objectives. 
-Firstly, the bot can receive the informations about user's applications. Those inforrmations have to contain:
-- an URL of internship offer
-- the intern position
-- the compagny
+Firstly, the bot can receive information about the user's applications. This information should contain
+- the URL of the internship offer
+- the trainee's position
+- the company
 
-The bot process those informations and store them in a SQL database table. 
-Once you receive a reponse to your internship application, you can update the status of the application trough the bot. The update informations will be store in a other table of same SQL database. The URL of internship is set to be the join key of two table. In the second table. You have the possibility to store:
-- an URL of internship offer
-- if you get an interview (Yes/No)
+The bot processes this information and stores it in a table in the SQL database. 
+Once you have received a response to your internship application, you can update the status of your application via the bot. The update information will be stored in another table in the same SQL database. The internship URL is defined as the linking key for the two tables. In the second table. You can store
+- the URL of the internship offer
+- whether you are granted an interview (Yes/No)
 - the potential date of the interview.
 
 ## Table of Contents
@@ -28,13 +28,15 @@ Once you receive a reponse to your internship application, you can update the st
 You can use this application in few steps:
 1. Create a telegram bot
 
-    BotFather is a natif telegram bot that help you create and manage your bot on the message application.
-    To create your bot use the command keyword `/newbot` and follow the instructions. Once you create your bot, it comes with a token to access telegram API. Keep it, you will need it later.
+    BotFather is a natif telegram bot that help you create and manage your bot on telegram message application.
+    To create your bot use the command keyword `/newbot` and follow the instructions. Once you create your bot, it comes with an API token to access telegram. Keep it, you will need it later.
     You have to set to keyword commands to your bot:
     - `/addapplication` to add application
     - `/updateapplication` to update application
 
-    You can do all of this trough BotFather. You only need to call `/mybots` and follow the instructions. You are ready to clone the repository.
+    You can do all of this trough BotFather. You only need to call `/mybots` and follow the instructions. 
+    
+    You are ready to clone the repository.
 
 2. Clone the repository
 
@@ -42,7 +44,7 @@ You can use this application in few steps:
     ```bash
     git clone https://github.com/Datadoulla/intern.git
     ```
-    Once you clone the repo, you have to add ans .env file to store and protect the access to your sensible token to access telegram API.
+    Once you clone the repo, you have to add ans .env file to store and protect the access to your sensible token for accessing telegram API.
 
 3. Run the application
 
