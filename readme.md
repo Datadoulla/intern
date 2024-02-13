@@ -38,36 +38,44 @@ You can use this application in few steps:
 
 2. Clone the repository
 
-Copy and run the below code in your favorite command line interface.
-```bash
-git clone https://github.com/Datadoulla/intern.git
-```
-Once you clone the repo, you have to add ans .env file to store and protect the access to your sensible token to access telegram API.
+    Copy and run the below code in your favorite command line interface.
+    ```bash
+    git clone https://github.com/Datadoulla/intern.git
+    ```
+    Once you clone the repo, you have to add ans .env file to store and protect the access to your sensible token to access telegram API.
 
 3. Run the application
 
-At the step, you have two possibilities. The first one is more elegant. If you are familliar with docker, open your docker application and build the following docker image with the cloned repo Dockerfile.
-```bash
-docker build -t internbot_img . 
-```
-After that, you can run the application in a safe docker container excuting thi command line code
-```bash
-docker run --name interbot  internbot_img
-```
+    At the step, you have two possibilities. The first one is more elegant. If you are familliar with docker, open your docker application and build the following docker image with the cloned repo Dockerfile.
+    ```bash
+    docker build -t internbot_img . 
+    ```
+    After that, you can run the application in a safe docker container excuting thi command line code
+    ```bash
+    docker run --name interbot  internbot_img
+    ```
 
-The second option is to create an environnement and install the applicaion requirements.
-```python
-pip3 install -r requirements.txt
-```
-And run the main.py
+    The second option is to create an environnement and install the applicaion requirements.
+    ```python
+    pip3 install -r requirements.txt
+    ```
+    And run the main.py
 
-```python
-python -m main.py
-```
+    ```python
+    python -m main.py
+    ```
 
 ## Usage
 
-Instructions on how to use the project and any relevant examples.
+The application utilisation is pretty simple but have to follow a strict format. To add track application, you have to call `/addapplication` keyword follow by the URL of application, a position one word description and the compagny.
+
+Example:
+> https://cacf.talentview.io/jobs/d9q8nk?source=carriere&utm_source=carriere DS (for data scientist) Crédit agricole
+
+To update an application, you need to response to the application message with `/updateapplication` keyword and precise Yes if you get an interview and the date of interview and No else.
+
+I personnaly recommand you to host you application on api plateforme like *pythonanywhere* to have a perment access and running application.
+
 <!---
 ## Contributing
 
