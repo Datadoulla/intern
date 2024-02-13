@@ -8,6 +8,7 @@ Firstly, the bot can receive the informations about user's applications. Those i
 - an URL of internship offer
 - the intern position
 - the compagny
+
 The bot process those informations and store them in a SQL database table. 
 Once you receive a reponse to your internship application, you can update the status of the application trough the bot. The update informations will be store in a other table of same SQL database. The URL of internship is set to be the join key of two table. In the second table. You have the possibility to store:
 - an URL of internship offer
@@ -26,17 +27,44 @@ Once you receive a reponse to your internship application, you can update the st
 
 You can use this application in few steps:
 1. Create a telegram bot
+
     BotFather is a natif telegram bot that help you create and manage your bot on the message application.
     To create your bot use the command keyword `/newbot` and follow the instructions. Once you create your bot, it comes with a token to access telegram API. Keep it, you will need it later.
     You have to set to keyword commands to your bot:
     - `/addapplication` to add application
-    - `/updateapplication` to update applicatio
+    - `/updateapplication` to update application
+
     You can do all of this trough BotFather. You only need to call `/mybots` and follow the instructions. You are ready to clone the repository.
 
 2. Clone the repository
+
+Copy and run the below code in your favorite command line interface.
 ```bash
-git clone
+git clone https://github.com/Datadoulla/intern.git
 ```
+Once you clone the repo, you have to add ans .env file to store and protect the access to your sensible token to access telegram API.
+
+3. Run the application
+
+At the step, you have two possibilities. The first one is more elegant. If you are familliar with docker, open your docker application and build the following docker image with the cloned repo Dockerfile.
+```bash
+docker build -t internbot_img . 
+```
+After that, you can run the application in a safe docker container excuting thi command line code
+```bash
+docker run --name interbot  internbot_img
+```
+
+The second option is to create an environnement and install the applicaion requirements.
+```python
+pip3 install -r requirements.txt
+```
+And run the main.py
+
+```python
+python -m main.py
+```
+
 ## Usage
 
 Instructions on how to use the project and any relevant examples.
