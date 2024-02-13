@@ -48,7 +48,7 @@ You can use this application in few steps:
 
 3. Run the application
 
-    At the step, you have two possibilities. The first one is more elegant. If you are familliar with docker, open your docker application and build the following docker image with the cloned repo Dockerfile.
+    At the step, you have two possibilities. **The first one is more elegant. If you are familliar with docker, open your docker application and build the following docker image with the cloned repo Dockerfile.**
     ```bash
     docker build -t internbot_img . 
     ```
@@ -57,7 +57,7 @@ You can use this application in few steps:
     docker run --name interbot  internbot_img
     ```
 
-    The second option is to create an environnement and install the applicaion requirements.
+    **The second option is to create an environnement and install the applicaion requirements.**
     ```python
     pip3 install -r requirements.txt
     ```
