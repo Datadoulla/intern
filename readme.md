@@ -28,7 +28,7 @@ Once you have received a response to your internship application, you can update
 You can use this application in few steps:
 1. Create a telegram bot
 
-    BotFather is a natif telegram bot that help you create and manage your bot on telegram message application.
+    [BotFather](https://core.telegram.org/api) is a natif telegram bot that help you create and manage your bot on telegram message application.
     To create your bot use the command keyword `/newbot` and follow the instructions. Once you create your bot, it comes with an API token to access telegram. Keep it, you will need it later.
     You have to set to keyword commands to your bot:
     - `/addapplication` to add application
